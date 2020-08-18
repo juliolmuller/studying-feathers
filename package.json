@@ -9,9 +9,9 @@
     "feathers",
     "real-time"
   ],
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server/"
   },
   "dependencies": {
     "@feathersjs/express": "^4.5.8",
@@ -29,6 +29,10 @@
       "es6": true
     },
     "extends": "@lacussoft/standard",
-    "rules": {}
+    "rules": {
+      "no-console": "off",
+      "no-magic-numbers": "off",
+      "no-warning-comments": "off"
+    }
   }
 }
