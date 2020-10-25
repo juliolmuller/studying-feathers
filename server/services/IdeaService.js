@@ -1,6 +1,7 @@
 const moment = require('moment')
 
 class IdeaService {
+
   constructor() {
     this.ideas = []
   }

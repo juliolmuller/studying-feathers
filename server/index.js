@@ -2,8 +2,14 @@ const feathers = require('@feathersjs/feathers')
 const socketio = require('@feathersjs/socketio')
 const express = require('@feathersjs/express')
 const IdeaService = require('./services/IdeaService')
+const path = require('path')
 
+const PORT = process.env.PORT || 3030
 const app = express(feathers())
+
+app.get('/', (_req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))
+})
 
 // Configure Socket.io and enable REST services
 app.configure(socketio())
@@ -17,8 +23,9 @@ app.use('/ideas', new IdeaService())
 app.on('connection', (conn) => app.channel('stream').join(conn))
 app.publish(() => app.channel('stream'))
 
-const PORT = process.env.PORT || 3030
-app.listen(PORT).on('listening', () => console.log(`Real-time app running on port ${PORT}`))
+app.listen(PORT).on('listening', () => {
+  console.log(`Server running on http://localhost:${PORT}`)
+})
 
 // TODO: remove
 app.service('ideas').create({
