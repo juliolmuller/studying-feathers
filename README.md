@@ -61,3 +61,4 @@ $ npm start     # Start the server
 
 - [x] Web socket creation;
 - [x] Submission of a form with real-time feedback;
+- [x] Deploy application on Heroku;
