@@ -58,10 +58,10 @@
     </div>
 
     <script src="https://unpkg.com/@feathersjs/client@^4/dist/feathers.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
     <script>
       // Socket.io setup
-      const socket = io('http://localhost:3030');
+      const socket = io(location.origin);
 
       // Init feathers app
       const app = feathers();
