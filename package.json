@@ -1,25 +1,23 @@
 {
   "name": "crud-feathers",
   "version": "0.2.1",
+  "private": true,
   "license": "MIT",
-  "author": {
-    "name": "Julio L. M",
-    "url": "https://juliolmuller.github.io/"
-  },
+  "author": "Julio L. Muller",
   "main": "server/index.js",
   "scripts": {
     "start": "node .",
     "watch": "nodemon ."
   },
   "dependencies": {
-    "@feathersjs/express": "^4.5.9",
-    "@feathersjs/feathers": "^4.5.9",
-    "@feathersjs/socketio": "^4.5.9",
+    "@feathersjs/express": "^4.5.11",
+    "@feathersjs/feathers": "^4.5.11",
+    "@feathersjs/socketio": "^4.5.11",
     "moment": "^2.29.1"
   },
   "devDependencies": {
-    "@lacussoft/eslint-config-standard": "^1.0.9",
-    "eslint": "^7.12.0",
+    "@lacussoft/eslint-config": "^1.0.1",
+    "eslint": "^7.16.0",
     "nodemon": "^2.0.6"
   },
   "eslintConfig": {
@@ -28,7 +26,7 @@
       "node": true,
       "es6": true
     },
-    "extends": "@lacussoft/standard",
+    "extends": "@lacussoft",
     "rules": {
       "no-console": "off",
       "no-magic-numbers": "off",
