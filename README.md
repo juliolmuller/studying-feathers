@@ -25,8 +25,6 @@
 
 Simple application developed to learn a web socket framework for Node.js. Completely based on Traversy Media's [crash course available in YouTube](https://www.youtube.com/watch?v=8y33WCVkLwc).
 
-[Check out the application running!](https://ideias-e-mais-ideias.herokuapp.com/)
-
 ## :trophy: Lessons Learned
 
 - Feathers configuration in backend;
